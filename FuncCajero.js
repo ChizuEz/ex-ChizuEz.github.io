@@ -4,7 +4,6 @@ var cuentas = [
   { nombre: "Maui", saldo: 67 }
 ]
 
-
 function login(form) {
   if (form.c.value == "9245") {
     location="SesionMali.html"
@@ -29,7 +28,6 @@ function login3(form) {
   }
 }
 
-
 //FUNCIONES DE MALI EXCLUSIVAS
 
 function Consultar() {
@@ -47,6 +45,9 @@ function Depositar() {
   document.getElementById("C1").value=(CantidadIng + CantidadTotal)
   CantidadTotal.push(contador++)
   }
+  if(CantidadSuma = 990){
+    alert("La cantidad maxima que puedes tener son: $990")
+  }
 }
 
 function Retirar() {
@@ -57,6 +58,9 @@ function Retirar() {
   while (CantidadResta >= 10) {
   document.getElementById("C1").value=(CantidadTotal - CantidadRet)
   CantidadTotal.push(contador++)
+  }
+  if(CantidadResta = 10){
+    alert("La cantidad minina que puedes tener son: $10")
   }
 }
 
@@ -80,6 +84,9 @@ function Depositar2() {
   document.getElementById("C1").value=(CantidadIng + CantidadTotal)
   CantidadTotal.push(contador++)
   }
+  if(CantidadSuma = 990){
+    alert("La cantidad maxima que puedes tener son: $990")
+  }
 }
 
 function Retirar2() {
@@ -90,6 +97,9 @@ function Retirar2() {
   while (CantidadResta >= 10) {
   document.getElementById("C1").value=(CantidadTotal - CantidadRet)
   CantidadTotal.push(contador++)
+  }
+  if(CantidadResta = 10){
+    alert("La cantidad minina que puedes tener son: $10")
   }
 }
 
@@ -112,6 +122,9 @@ function Depositar3() {
   document.getElementById("C1").value=(CantidadIng + CantidadTotal)
   CantidadTotal.push(contador++)
   }
+  if(CantidadSuma = 990){
+    alert("La cantidad maxima que puedes tener son: $990")
+  }
 }
 
 function Retirar3() {
@@ -119,9 +132,12 @@ function Retirar3() {
   var CantidadTotal = parseInt(document.getElementById("C1").value)
   var CantidadResta = CantidadTotal - CantidadRet
   var contador = 0
-  while (CantidadResta >= 1o0) {
+  while (CantidadResta >= 10) {
   document.getElementById("C1").value=(CantidadTotal - CantidadRet)
   CantidadTotal.push(contador++)
+  }
+  if(CantidadResta = 10){
+    alert("La cantidad minina que puedes tener son: $10")
   }
 }
   //FIN DE LAS FUNCIONES EXCLUSIVAS DE MAUI
