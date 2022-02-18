@@ -31,18 +31,18 @@ function login3(form) {
 //FUNCIONES DE MALI EXCLUSIVAS
 
 function Consultar() {
-  var CantidadTotal = parseInt(document.getElementById("C1").value)
-  document.getElementById("C1").value=(CantidadTotal)
+  var CantidadTotal = parseInt(document.getElementById("Valor").value)
+  document.getElementById("Valor").value=(CantidadTotal)
 }
 
 
 function Depositar() {
-  var CantidadIng = parseInt(document.getElementById("Cant").value)
-  var CantidadTotal = parseInt(document.getElementById("C1").value)
+  var CantidadIng = parseInt(document.getElementById("Amount").value)
+  var CantidadTotal = parseInt(document.getElementById("Valor").value)
   var CantidadSuma = CantidadIng + CantidadTotal
   var contador = 0
   while (CantidadSuma <= 990) {
-  document.getElementById("C1").value=(CantidadIng + CantidadTotal)
+  document.getElementById("Valor").value=(CantidadIng + CantidadTotal)
   CantidadTotal.push(contador++)
   }
   if(CantidadSuma = 990){
@@ -51,12 +51,12 @@ function Depositar() {
 }
 
 function Retirar() {
-  var CantidadRet = parseInt(document.getElementById("Cant2").value)
-  var CantidadTotal = parseInt(document.getElementById("C1").value)
+  var CantidadRet = parseInt(document.getElementById("Amount2").value)
+  var CantidadTotal = parseInt(document.getElementById("Valor").value)
   var CantidadResta = CantidadTotal - CantidadRet
   var contador = 0
   while (CantidadResta >= 10) {
-  document.getElementById("C1").value=(CantidadTotal - CantidadRet)
+  document.getElementById("Valor").value=(CantidadTotal - CantidadRet)
   CantidadTotal.push(contador++)
   }
   if(CantidadResta = 10){
@@ -70,18 +70,18 @@ function Retirar() {
 //FUNCIONES EXCLUSIVAS DE GERA
 
 function Consultar2() {
-  var CantidadTotal = parseInt(document.getElementById("C1").value)
-  document.getElementById("C1").value=(CantidadTotal)
+  var CantidadTotal = parseInt(document.getElementById("Valor").value)
+  document.getElementById("Valor").value=(CantidadTotal)
 }
 
 
 function Depositar2() {
-  var CantidadIng = parseInt(document.getElementById("Cant").value)
-  var CantidadTotal = parseInt(document.getElementById("C1").value)
+  var CantidadIng = parseInt(document.getElementById("Amount").value)
+  var CantidadTotal = parseInt(document.getElementById("Valor").value)
   var CantidadSuma = CantidadIng + CantidadTotal
   var contador = 0
   while (CantidadSuma <= 990) {
-  document.getElementById("C1").value=(CantidadIng + CantidadTotal)
+  document.getElementById("Valor").value=(CantidadIng + CantidadTotal)
   CantidadTotal.push(contador++)
   }
   if(CantidadSuma = 990){
@@ -90,12 +90,12 @@ function Depositar2() {
 }
 
 function Retirar2() {
-  var CantidadRet = parseInt(document.getElementById("Cant2").value)
-  var CantidadTotal = parseInt(document.getElementById("C1").value)
+  var CantidadRet = parseInt(document.getElementById("Amount2").value)
+  var CantidadTotal = parseInt(document.getElementById("Valor").value)
   var CantidadResta = CantidadTotal - CantidadRet
   var contador = 0
   while (CantidadResta >= 10) {
-  document.getElementById("C1").value=(CantidadTotal - CantidadRet)
+  document.getElementById("Valor").value=(CantidadTotal - CantidadRet)
   CantidadTotal.push(contador++)
   }
   if(CantidadResta = 10){
@@ -108,18 +108,18 @@ function Retirar2() {
 //FUNCIONES EXCLUSIVAS DE MAUI
 
 function Consultar3() {
-  var CantidadTotal = parseInt(document.getElementById("C1").value)
-  document.getElementById("C1").value=(CantidadTotal)
+  var CantidadTotal = parseInt(document.getElementById("Valor").value)
+  document.getElementById("Valor").value=(CantidadTotal)
 }
 
 
 function Depositar3() {
-  var CantidadIng = parseInt(document.getElementById("Cant").value)
-  var CantidadTotal = parseInt(document.getElementById("C1").value)
+  var CantidadIng = parseInt(document.getElementById("Amount").value)
+  var CantidadTotal = parseInt(document.getElementById("Valor").value)
   var CantidadSuma = CantidadIng + CantidadTotal
   var contador = 0
   while (CantidadSuma <= 990) {
-  document.getElementById("C1").value=(CantidadIng + CantidadTotal)
+  document.getElementById("Valor").value=(CantidadIng + CantidadTotal)
   CantidadTotal.push(contador++)
   }
   if(CantidadSuma = 990){
@@ -128,12 +128,12 @@ function Depositar3() {
 }
 
 function Retirar3() {
-  var CantidadRet = parseInt(document.getElementById("Cant2").value)
-  var CantidadTotal = parseInt(document.getElementById("C1").value)
+  var CantidadRet = parseInt(document.getElementById("Amount2").value)
+  var CantidadTotal = parseInt(document.getElementById("Valor").value)
   var CantidadResta = CantidadTotal - CantidadRet
   var contador = 0
   while (CantidadResta >= 10) {
-  document.getElementById("C1").value=(CantidadTotal - CantidadRet)
+  document.getElementById("Valor").value=(CantidadTotal - CantidadRet)
   CantidadTotal.push(contador++)
   }
   if(CantidadResta = 10){
